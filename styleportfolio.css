@@ -13,10 +13,10 @@ body{
 	margin: 1%;
 	margin-top: 0%;
 	background-image: linear-gradient(to right, rgb(2, 4, 18), black 100%);
-    background-repeat: no-repeat;
-    background-position:center ;
-    background-size: cover;
-    background-attachment: fixed;
+        background-repeat: no-repeat;
+   	background-position:center ;
+    	background-size: cover;
+    	background-attachment: fixed;
 	color: #fff;
 
 }
@@ -59,7 +59,7 @@ span#autotype{
 }
 .name-title{
 	margin-top: 0%;
-	background-image: url('./img/Design-modified.png');
+	background-image: url('./Design-modified.png');
 	height:100vh;
 	background-attachment: fixed;
 	background-position: center;
