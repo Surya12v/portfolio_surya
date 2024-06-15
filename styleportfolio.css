@@ -1,0 +1,192 @@
+html{
+	scroll-behavior: smooth;
+	
+	
+}
+@font-face {
+	font-family: Messenger Texture;
+	src: url(MessengerTexture-GOX6D.otf);
+  }
+body{
+	margin: 0%;
+	font-family: 'Courier New', Courier, monospace;
+	margin: 1%;
+	margin-top: 0%;
+	background-image: linear-gradient(to right, rgb(2, 4, 18), black 100%);
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-size: cover;
+    background-attachment: fixed;
+	color: #fff;
+
+}
+/* For desktop screens */
+body {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/* For tablets */
+@media only screen and (max-width: 768px) {
+	body {
+		width: 100%;
+		font-size: 14px;
+	}
+}
+
+/* For mobile phones */
+@media only screen and (max-width: 480px) {
+	body {
+		width: 100%;
+		font-size: 12px;
+	}
+}
+
+.name{
+    
+    align-items: start;
+    /*justify-content: center;*/
+    padding: 0px 0px 0px 25px;
+	background-attachment:sticky;
+}
+h1{
+    color: #fff;
+    font-size: 50px;
+	font-family: Messenger Texture;
+}
+span#autotype{
+    color: #fff700dd;
+}
+.name-title{
+	margin-top: 0%;
+	background-image: url('./img/Design-modified.png');
+	height:100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 30%;
+	width: 100%;
+	
+}
+@media (max-width: 768px) {
+	.name-title {
+		background-size: contain; /* or any other value */
+	}
+}
+
+
+.menu{
+    position: fixed;
+    left: 0px;
+    top: 0%;
+    right: 0%;
+    text-align: center;
+    background-image: linear-gradient(to right, #020412, black 100%);
+	background-position: center;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.menu-list {
+    list-style-type: none;
+    
+}
+.menu-items{
+    
+    display: inline;
+    padding: 20px;
+    
+}
+.menu-items a:hover{
+    color:gold;
+}
+
+@media (max-width: 768px) {
+  .menu {
+	grid-template-columns: 1fr; /* For grid layout */
+  }
+}
+
+
+#home{
+	transition-timing-function: ease-in-out;
+	padding-left: 1%;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: 30%; /* Adjust the width as per your requirement */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  height:fit-content;
+  display: block;
+  size: 25%;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-content h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.card-content p {
+  margin: 5px 0 0;
+  padding: 0;
+}
+
+#about{
+	font-size: 40px;
+	top: 100%;
+	padding-left: 1%;
+	text-align: justify;
+	font-size: small;
+}
+.grid-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.grid-item {
+	box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+	background: rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
+	border-radius: 1em;
+	overflow: hidden;
+	justify-self: stretch; /* Stretches the item to fill the column */
+	align-self: stretch; /* Stretches the item to fill the row */
+  background-color: #000000;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: justify;
+
+}
+.grid-item:hover{
+    background-color: rgba(215, 132, 30, 0.608);
+}
+
+.journy{
+	padding-left: 1%;
+	text-align: justify;
+	font-size: small;
+	
+
+}
