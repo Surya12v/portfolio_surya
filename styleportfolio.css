@@ -18,7 +18,7 @@ body{
     background-size: cover;
     background-attachment: fixed;
 	  color: #fff;
-    font-size: 25px;
+    font-size: 16px;
 
 }
 /* For desktop screens */
@@ -48,7 +48,7 @@ body {
     align-items: start;
     justify-content: center;
     text-align: center;
-    padding: 750px 0px 0px 0px;
+    padding: 650px 0px 0px 0px;
 	  background-attachment:sticky;
 }
 h1{
