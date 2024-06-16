@@ -8,26 +8,28 @@
 	<link href="https://fonts.googleapis.com/css2?family=Font+Name&display=swap" rel="stylesheet">
 	<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 	<link rel="stylesheet" href="styleportfolio.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
-
 	<nav class="menu">
 		<ul class="menu-list">
-			<li class="menu-items"><a href="#name">HOME</a></li>
+			<li class="menu-items"><a href="#name1">HOME</a></li>
+			<li class="menu-items"><a href="#skill">SKILLS</a></li>
 			<li class="menu-items"><a href="#about">ABOUT</a></li>
-
 			<li class="menu-items"><a href="#projects">PROJECTS</a></li>
-
-			<li class="menu-items"><a href=""></a></li>
-
-			<li class="menu-items"><a href="#contact">CONTACT</a></li>
+			<li class="menu-items"><a href="#footer">CONTACT</a></li>
     	</ul>
 	</nav>
-	<div class="name-title"><p>SURYA V</p>
 
+	<div id="name1">
+	<div class="name-title"><p>SURYA V</p>
 	<div class="home">
 		<div class="name">
 			<h1><span id="autotype"></span></h1>
+
 		<script>
 			var typed=new Typed("#autotype",{
 				strings : ["I'm SURYA","DEVELOPER","CREATIVE!!"],
@@ -39,41 +41,73 @@
 		</div>
 	</div>
 </div>
+</div>
 <br><br>
 
 <!--SKILLS-->
-	<div class="skills"> SKILLS <br> <br><br></div>
+
+<div id="skill">
+	<br><br><br>
+	<div class="skills" style="font-size: larger; font-weight: bold; text-align: center;"> SKILLS <br> <br><br></div>
 		<div class="card-container"> 
 			<div class="card">
-				<img src="html.png" alt="Image 1">
+				<img src="img\html.png" alt="Image 1">
 				<div class="card-content">
-					<h3>Card Title 1</h3>
+					<h3>HTML5</h3>
 					<p>Knowledge on HTML</p>
 				</div>
 			</div>
 			<div class="card">
-				<img src="css.png" alt="Image 2">
+				<img src="img\css.png" alt="Image 2">
 					<div class="card-content">
-						<h3>Card Title 2</h3>
+						<h3>CSS</h3>
 						<p>Know to desgin.</p>
 					</div>
 			</div>
 		<div class="card">
-			<img src="js.png" alt="Image 3">
+			<img src="img\js.png" alt="Image 3">
 			<div class="card-content">
-				<h3>Card Title 3</h3>
+				<h3>JavaScript</h3>
 				<p>Base on JavaScript.</p>
 			</div>
 		</div>
 	</div>
 
+	<br><br><br>
+
+	<div class="skills" style="font-size: larger; font-weight: bold; text-align: center;"> PROGRAMMING SKILLS <br> <br><br></div>
+	<div class="card-container"> 
+		<div class="card">
+				<img src="img\c.png" alt="Image 4">
+				</div>
+			<div class="card">
+				<img src="img\java.png" alt="Image 5">
+		</div>
+	</div>
+</div>
+<br><br><br>
+<div class="skills" style="font-size: larger; font-weight: bold; text-align: center;"> TOOLS <br> <br><br></div>
+	<div class="card-container"> 
+		<div class="card">
+				<img src="img\vs.png" alt="Image 6">
+				<div class="card-content">
+					<h3>Visual Studio</h3>
+				</div>
+				</div>
+			
+	</div>
+</div>
+<br><br><br>
 	<div id="about">
-			<p>         As a tech enthusiast, I’ve always been fascinated by the dynamic world of web development. From crafting elegant user interfaces to diving into the intricacies of backend systems,
-				 I find joy in every line of code I write. 🌐💻My journey began with basic HTML and CSS, but over time, I’ve expanded my skill set to include JavaScript, React, and Node.js.Whether 
+			<p>         As a tech enthusiast, I’ve always been fascinated by the dynamic world of web development. From crafting elegant user interfaces   to diving into the intricacies of backend systems,
+				 I find joy in every line of code I write. 🌐💻My journey began with basic HTML and CSS, but over time, I’ve now trying to expanded my skill set to include JavaScript, React, and Node.js.Whether 
 				 it’s optimizing performance, solving complex problems, or creating delightful user experiences, I thrive on the challenges that web development presents. I believe that technology has 
 				 the power to transform lives, and I’m excited to be part of this ever-evolving field.<br><br>
 				 Feel free to explore my portfolio—I’ve poured my heart and soul into every project. From personal websites to collaborative ventures, each line of code represents my passion for turning ideas into reality. Let’s connect and build something amazing together! 🤝</p>
-			<h3>EDUCATION</h3>
+
+				 <br><br>
+			<div class="education"><p style="font-size: larger; font-weight: bold; text-align: center;">EDUCATION</p>
+				<br>
 				<div class="grid-container">
 				  <div class="grid-item">
 					2021-2025: Bachelor of technology Information Technology.
@@ -93,11 +127,12 @@
 				</div>
 				
 			</div>
-	</div>
+		</div>
 	
+	<br><br><br>
 
-	<div id="journy">
-		<p><div class="journy">My Web Development Learning Journey</div><br><br>
+
+		<p><div class="journy"> <p style="font-size: larger; font-weight: bold; text-align: center;">My Web Development Learning Journey</p></div><br>
 		    <span >🌱The Seedling Stage: </span> and CSS
 			In the early days of my web development journey, I planted the seeds of curiosity. HTML (Hypertext Markup Language) became my canvas, allowing me to structure content, create headings, and weave together the fabric of web pages. With HTML, I learned to build the skeleton of a website—like arranging bricks to form the walls of a house. But what’s a house without some style? That’s where CSS (Cascading Style Sheets) stepped in. CSS added colors, fonts, and layouts, turning my plain HTML pages into visually appealing sites. I remember the thrill of my first “Hello, World!” webpage—a humble sprout reaching for the sun.<br><br>
 			
@@ -113,8 +148,74 @@
 			🚀 The Ongoing Odyssey
 			And so, my journey continues. I devour tutorials, wrestle with bugs, and dream of deploying my own projects. The web is my canvas, and I’m an artist with infinite colors. Whether it’s a personal blog, an e-commerce site, or a futuristic app, I’m ready to code my way to the stars.<br><br>
 			
-			Remember, every line of code is a step forward. So let’s keep learning, keep building, and keep pushing the boundaries of what’s possible. 🌟✨</p><br><br>
+			Remember, every line of code is a step forward. So let’s keep learning, keep building, and keep pushing the boundaries of what’s possible. 🌟✨</p>
+
+			<br><br><br>
+			<div class="certifications">
+
+			</div>		
 	</div>
+	
+
+	<div id="projects">
+		<br><br><br>
+		<p style="font-size: larger; font-weight: bold; text-align: center;">PROJECTS</p>
+		<main>
+			<div class = "card-project">
+			  <img src="img\project1.jpeg" alt="">
+			  <div class="card-project-content">
+				<h2>
+				  HEALTHLINK-PRO
+				</h2>
+				<p>
+					AN INTELLIGENT INTEGRATED 
+					DOCTOR-PATIENT RELATIONSHIP 
+					MANAGEMENT PLATFORM
+				</p>
+				<a href="BATCH 1 finalppt (1).pdf" target="_blank" class="button">
+				  Find out more 
+				  <span class="material-symbols-outlined">
+					arrow_right_alt
+				  </span>
+				</a>
+			  </div>
+			</div>
+		  </main>
+	</div>
+<br><br><br>
+	<div id="footer">
+		<br><br><br>
+
+	<footer class="footer">
+		<div class="waves">
+		  <div class="wave" id="wave1"></div>
+		  <div class="wave" id="wave2"></div>
+		  <div class="wave" id="wave3"></div>
+		  <div class="wave" id="wave4"></div>
+		</div>
+		<ul class="social-icon">
+		 
+			</a></li>
+		  <li class="social-icon__item"><a class="social-icon__link" href="https://github.com/Surya12v">
+			  <ion-icon name="logo-github"></ion-icon>
+			</a></li>
+		  <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/in/surya-v-05729126a/">
+			  <ion-icon name="logo-linkedin"></ion-icon>
+			</a></li>
+		 
+		</ul>
+		<ul class="menu-footer">
+		  <li class="menu__item"><a class="menu__link" href="#name1">Home</a></li>
+		  <li class="menu__item"><a class="menu__link" href="#about">About</a></li>
+		  <li class="menu__item"><a class="menu__link" href="Resume_SuryaV (1).pdf" target="_blank">Resume
+		  </a></li>
+		  <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+	
+		</ul>
+	  </footer>
+	</div>
+	  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	
 </body>
 </html>
