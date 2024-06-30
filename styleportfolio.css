@@ -10,12 +10,8 @@ body{
     width: 100%;
     margin: 0px;
     padding: 0px;
-	  background-image: linear-gradient(to top, rgb(7, 13, 53), rgb(95, 31, 127) 50%);
-    background-repeat: no-repeat;
-    background-position:center ;
-    background-size: cover;
-    background-attachment: fixed;
-	  color: #fff;
+	 
+	  color: #000000;
     font-size: 20px;
     font-family: 'Roboto Condensed', sans-serif;
     line-height: 35px;
@@ -33,12 +29,12 @@ body{
 	  background-attachment:sticky;
 }
 h1{
-    color: #fff;
+    color: #ffffff;
     font-size: 50px;
 	  font-family: Messenger Texture;
 }
 span#autotype{
-    color: #fff700dd;
+    color: #000000dd;
 }
 .name-title{
 	margin-top: 0%;
@@ -121,7 +117,7 @@ span#autotype{
 .grid-container {
   display: grid;
   grid-template-rows: auto auto;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
   gap: 10px;
   justify-content: center;
   align-items: center;
@@ -430,22 +426,15 @@ main {
 @media (max-width: 980px) {
  
   body{
-    width: 100%;
-    margin: 0px;
+    max-width: 100%;
+    margin: 0.5% ;
     padding: 0px;
-	  background-image: linear-gradient(to right, #278616, rgba(107, 187, 78, 0.291) 100%);
-    background-color: #172D13;
-    background-repeat: no-repeat;
-    background-position:center ;
-    background-size: cover;
-    background-attachment: fixed;
 	  color: #000000;
-    font-size: 20px;
-    font-family: 'Roboto Condensed', sans-serif;
-    line-height: 35px;
-    word-spacing: 7px;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 30px;
+    word-spacing: 2.5px;
     margin-right: 0px;
-
     overflow-x: hidden;
   }
   .name{
@@ -454,22 +443,20 @@ main {
     padding: 0;
 	  background-attachment:sticky;
 }
-h1{
-    color: #E7D37F;
+.name h1{
     font-size: 25px;
-	  font-family: Messenger Texture;
 }
 span#autotype{
-    color: #E7D37F;
+    color: #ffcc00;
 }
 .name-title{
 	margin-top: 0%;
 	background-image: url('./img/mobile-logo.png');
-	height:100vh;
+	height:78vh;
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: 75%;
+	background-size: 90%;
 	width: 100%;
 	
 }
@@ -479,8 +466,8 @@ span#autotype{
   top: 0%;
   right: 0%;
   text-align: center;
-  background-image: linear-gradient(to right, #000000c8, #074b19 100%);
-  background-position: center;
+  background-color: #000000;
+  background-position:start;
   z-index: 9999;
 }
 .menu a{
@@ -495,7 +482,7 @@ span#autotype{
 .menu-items{
   
   display: inline;
-  padding: 5px;
+  padding: 1px;
   
 }
 .menu-items a:hover{
@@ -518,30 +505,60 @@ span#autotype{
 }
 /*---------------------------------------------------------*/
 
-/*------------------------------------------------EDUCATION--*/
-.grid-container {
-  display: grid;
-  grid-template-rows: auto auto;
-  grid-template-columns: auto auto;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
+
+.card-project{
+  left: 20px;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: rgb(0, 0, 0);;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-project {
+  left: 1px;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+ 
+
+  h2 {
+    font-size: 20px;
+    left: 3%;
+    top:85%
+  }
   
+  p, a {
+    position: absolute;
+    opacity: 0;
+    max-width: 100%;
+    transition: opacity .3s ease-out;
+    font-size: 10px;
+  }
+  
+  p {
+    inset: auto auto 50px 30px;
+  }
+  
+  a {
+    inset: auto auto 40px 30px;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  &:hover h2 {
+    inset: auto auto 150px 30px;
+    
+  }
+
 }
 
-.grid-item {
-	box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
-	background: rgb(255, 255, 255);
-	color: rgb(255, 255, 255);
-	border-radius: 1em;
-	overflow: hidden;
-	justify-self: stretch; /* Stretches the item to fill the column */
-	align-self: stretch; /* Stretches the item to fill the row */
-  background-color: #b0611c;
-  border: 1px solid #ccc;
-  padding: 20px;
-  text-align: justify;
-
-}
 }
 
