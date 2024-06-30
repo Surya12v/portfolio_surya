@@ -1,18 +1,16 @@
-html{
-	scroll-behavior: smooth;
-	
-	
+*{
+  scroll-behavior: smooth;
 }
+
 @font-face {
 	font-family: Messenger Texture;
 	src: url(MessengerTexture-GOX6D.otf);
   }
 body{
-	  margin: 0%;
-	  font-family: 'Times New Roman', Times, serif;
-	  margin: 1%;
-	  margin-top: 0%;
-	  background-image: linear-gradient(to right, rgb(2, 4, 18), black 100%);
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+	  background-image: linear-gradient(to top, rgb(7, 13, 53), rgb(95, 31, 127) 50%);
     background-repeat: no-repeat;
     background-position:center ;
     background-size: cover;
@@ -22,34 +20,16 @@ body{
     font-family: 'Roboto Condensed', sans-serif;
     line-height: 35px;
     word-spacing: 7px;
+    margin-right: 0px;
+    overflow-x: hidden;
 
 }
-/* For desktop screens */
-body {
-	width: 960px;
-	margin: 0 auto;
-}
 
-/* For tablets */
-@media only screen and (max-width: 768px) {
-	body {
-		width: 100%;
-		font-size: 14px;
-	}
-}
-
-/* For mobile phones */
-@media only screen and (max-width: 480px) {
-	body {
-		width: 100%;
-		font-size: 12px;
-	}
-}
 
 .name{
     
     align-items: start;
-    padding: 0px 0px 0px 0px;
+    padding: 0;
 	  background-attachment:sticky;
 }
 h1{
@@ -71,12 +51,6 @@ span#autotype{
 	width: 100%;
 	
 }
-@media (max-width: 768px) {
-	.name-title {
-		background-size: 30%; /* or any other value */
-	}
-}
-
 
 .menu{
     position: fixed;
@@ -85,7 +59,8 @@ span#autotype{
     right: 0%;
     text-align: center;
     background-image: linear-gradient(to right, #020412, black 100%);
-	background-position: center;
+	  background-position: center;
+    z-index: 9999;
 }
 .menu a{
     text-decoration: none;
@@ -105,11 +80,6 @@ span#autotype{
     color:gold;
 }
 
-@media (max-width: 768px) {
-  .menu {
-	grid-template-columns: 1fr; /* For grid layout */
-  }
-}
 
 
 #home{
@@ -119,12 +89,12 @@ span#autotype{
 
 .card-container {
   display: flex;
-  justify-content: space-around;
-  gap: 20px;
+  justify-content: center;
+  gap: 30px;
 }
-
+/*---------------------------------------------------SKILLS*/
 .card {
-  width: 20%; /* Adjust the width as per your requirement */
+  width: 10%; 
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
@@ -138,27 +108,16 @@ span#autotype{
   size: 25%;
 }
 
-.card-content {
-  padding: 5px;
-}
-
-.card-content h3 {
-  margin: 0;
-  padding: 0;
-}
-
-.card-content p {
-  margin: 5px 0 0;
-  padding: 0;
-}
 
 #about{
 	top: 100%;
 	padding-left: 1%;
+  padding-right: 1%;
 	text-align: justify;
   letter-spacing: 2.5px;
 	
 }
+/*---------------------EDUCATION--------*/
 .grid-container {
   display: grid;
   grid-template-rows: auto auto;
@@ -186,12 +145,13 @@ span#autotype{
 .grid-item:hover{
     background-color: rgba(215, 132, 30, 0.608);
 }
-
+/*---------------------------------------------------*/
 .journy{
-	padding-left: 1%;
+	padding: 0%;
 	text-align: justify;
 	
 }
+
 /*-----------------------------------CERTIFICATES*/
 .flex-container_certification {
   display: flex;
@@ -271,7 +231,7 @@ main {
 }
 
 .card-project {
-  left: 10px;
+  left: 20px;
   width: 27rem;
   height: 27rem;
   border-radius: 10px;
@@ -305,7 +265,7 @@ main {
   p, a {
     position: absolute;
     opacity: 0;
-    max-width: 80%;
+    max-width: 100%;
     transition: opacity .3s ease-out;
   }
   
@@ -344,14 +304,14 @@ main {
 /*----------------------------------------------FOOTER*/
 .footer {
   position: relative;
-  width: 90%;
+  width: 100%;
   background: #3586ff;
   min-height: 100px;
-  padding: 20px 50px;
+  padding: 10px 50px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 0;
   flex-direction: column;
+  align-items: start;
 }
 
 .social-icon,
@@ -405,7 +365,7 @@ main {
 .wave {
   position: absolute;
   top: -100px;
-  left: 0;
+  left: 0px;
   width: 100%;
   height: 100px;
   background: url("https://i.ibb.co/wQZVxxk/wave.png");
@@ -416,20 +376,21 @@ main {
   z-index: 1000;
   opacity: 1;
   bottom: 0;
-  animation: animateWaves 4s linear infinite;
+  animation: animateWaves 1s linear infinite;
 }
 
 .wave#wave2 {
   z-index: 999;
   opacity: 0.5;
   bottom: 10px;
-  animation: animate 4s linear infinite !important;
+  animation: animate 2s linear infinite !important;
 }
 
 .wave#wave3 {
   z-index: 1000;
   opacity: 0.2;
-  bottom: 15px;
+  bottom: 10px;
+  left: 0px;
   animation: animateWaves 3s linear infinite;
 }
 
@@ -437,7 +398,7 @@ main {
   z-index: 999;
   opacity: 0.7;
   bottom: 20px;
-  animation: animate 3s linear infinite;
+  animation: animate 4s linear infinite;
 }
 
 @keyframes animateWaves {
@@ -460,6 +421,127 @@ main {
 @media (max-width: 768px) {
   .footer {
     max-width: 100%;
-    padding: 0 10px;
+  
   }
 }
+
+/*------------------------------MEADIA QUERY FOR mobile-------------------------------------------------------*/
+/*--------------------vivo mobile viewport break point 980px-------*/
+@media (max-width: 980px) {
+ 
+  body{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+	  background-image: linear-gradient(to right, #278616, rgba(107, 187, 78, 0.291) 100%);
+    background-color: #172D13;
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-size: cover;
+    background-attachment: fixed;
+	  color: #000000;
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 35px;
+    word-spacing: 7px;
+    margin-right: 0px;
+
+    overflow-x: hidden;
+  }
+  .name{
+    
+    align-items: start;
+    padding: 0;
+	  background-attachment:sticky;
+}
+h1{
+    color: #E7D37F;
+    font-size: 25px;
+	  font-family: Messenger Texture;
+}
+span#autotype{
+    color: #E7D37F;
+}
+.name-title{
+	margin-top: 0%;
+	background-image: url('./img/mobile-logo.png');
+	height:100vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 75%;
+	width: 100%;
+	
+}
+.menu{
+  position: fixed;
+  left: 0px;
+  top: 0%;
+  right: 0%;
+  text-align: center;
+  background-image: linear-gradient(to right, #000000c8, #074b19 100%);
+  background-position: center;
+  z-index: 9999;
+}
+.menu a{
+  text-decoration: none;
+  color: #E7D37F;
+  font-size: 12px;
+}
+.menu-list {
+  list-style-type: none;
+  
+}
+.menu-items{
+  
+  display: inline;
+  padding: 5px;
+  
+}
+.menu-items a:hover{
+  color:rgb(255, 255, 255);
+}
+/*---------------------------------------------------SKILLS*/
+.card {
+  width: 30%; 
+  border: 0.5px solid #000000;
+  border-radius: 75px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  height:fit-content;
+  display: block;
+  size: 25%;
+}
+/*---------------------------------------------------------*/
+
+/*------------------------------------------------EDUCATION--*/
+.grid-container {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.grid-item {
+	box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
+	background: rgb(255, 255, 255);
+	color: rgb(255, 255, 255);
+	border-radius: 1em;
+	overflow: hidden;
+	justify-self: stretch; /* Stretches the item to fill the column */
+	align-self: stretch; /* Stretches the item to fill the row */
+  background-color: #b0611c;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: justify;
+
+}
+}
+
