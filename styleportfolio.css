@@ -203,17 +203,7 @@
 	  }
 	  
 	  
-	  &:hover p, &:hover a {
-	    color: #000000;
-	    opacity: 1;
-	    transition: opacity .8s .1s ease-in;
-	  }
-	  
-	  &:hover img {
-	    filter: blur(10px);
-	  }
-	
-	}
+	 
 	
 	.material-symbols-outlined {
 	  vertical-align: middle;
