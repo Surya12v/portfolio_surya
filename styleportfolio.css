@@ -89,6 +89,9 @@ span#autotype{
   gap: 30px;
 }
 /*---------------------------------------------------SKILLS*/
+.SKILLS_FULL{
+  background-color: #2e2929;
+}
 .card {
   width: 10%; 
   border: 1px solid #ccc;
